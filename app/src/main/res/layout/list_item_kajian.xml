@@ -1,0 +1,72 @@
+<FrameLayout android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp"
+    android:layout_marginBottom="7dp"
+    android:elevation="2dp"
+    android:translationZ="2dp"
+    android:background="@drawable/myrect"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="3dp"
+        android:colorControlHighlight="@color/colorAccent"
+        android:background="?android:attr/selectableItemBackground"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/judul_kajian"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLines="3"
+                android:text="Judul Kajian"
+                android:padding="8dp"
+                android:textColor="#222"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/ustad_kajian"
+                android:maxLines="3"
+                android:text="Pengisi Kajian"
+                android:textColor="@color/colorAccent"
+                android:textSize="12sp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:paddingBottom="8dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tangal_kajian"
+                android:maxLines="3"
+                android:padding="8dp"
+                android:text="tanggal kajian"
+                android:textColor="#aeacac"
+                android:textAllCaps="true"
+                android:textSize="12sp"
+                android:layout_above="@+id/ustad_kajian" />
+
+        </RelativeLayout>
+        <ImageView
+            android:id="@+id/thumbnail"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:layout_alignParentTop="true"
+            android:scaleType="centerCrop"
+            android:layout_gravity="center_vertical|right"
+            android:src="@mipmap/cover_daftar_kajian" />
+    </LinearLayout>
+</FrameLayout>

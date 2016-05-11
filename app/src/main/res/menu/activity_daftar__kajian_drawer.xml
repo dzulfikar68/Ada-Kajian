@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_kajian_terdekat"
+            android:icon="@drawable/ic_lokasi_saya"
+            android:title="Kajian Terdekat" />
+        <item
+            android:id="@+id/nav_tambah_kajian"
+            android:icon="@drawable/ic_tulis_hitam"
+            android:title="Tambah Kajian" />
+    </group>
+
+    <item android:title="Latar Belakang">
+        <menu>
+            <item
+                android:id="@+id/nav_akun"
+                android:icon="@drawable/ic_akun_hitam"
+                android:title="Akun" />
+            <item
+                android:id="@+id/nav_pengaturan"
+                android:icon="@drawable/ic_pengaturan"
+                android:title="Pengaturan" />
+            <item
+                android:id="@+id/nav_tentang"
+                android:icon="@drawable/ic_info_hitam"
+                android:title="Tentang" />
+            <item
+                android:id="@+id/nav_feedback"
+                android:icon="@drawable/ic_feedback_hitam"
+                android:title="Umpan Balik" />
+        </menu>
+    </item>
+
+</menu>

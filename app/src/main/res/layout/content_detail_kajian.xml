@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.digitcreativestudio.adakajian.DetailKajianActivity"
+    tools:showIn="@layout/activity_detail_kajian">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Menumbuhkan ukhuwah Islam di lingkungan kampus"
+                android:id="@+id/detail_judul"
+                android:textAppearance="@style/TextAppearance.AppCompat.Title" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="oleh Ustadz Khalid Basalamah"
+                android:id="@+id/detail_ustadz"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Subhead"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Selasa, 6 Mei 2016"
+                android:id="@+id/detail_tanggal"
+                android:drawableLeft="@drawable/ic_calendar"
+                android:gravity="center_vertical"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Body1"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="20:00 WIB"
+                android:id="@+id/detail_jam"
+                android:drawableLeft="@drawable/ic_clock"
+                android:gravity="center_vertical"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Body1"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Masjid Baitul Khairot Tembalang"
+                android:id="@+id/detail_lokasi"
+                android:drawableLeft="@drawable/ic_location"
+                android:gravity="center_vertical"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Body1"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/detail_keterangan"
+                android:text="Disini berisi keterangan yang berhbungan dengan kajian, mungkin saja keterangannya bisa panjang"
+                android:layout_marginBottom="@dimen/activity_vertical_margin"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Body1"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:background="@color/colorPrimaryDark">
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</android.support.v4.widget.NestedScrollView>
